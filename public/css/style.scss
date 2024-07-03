@@ -1,0 +1,609 @@
+@charset "utf-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 1px;
+}
+
+// index.blade.php
+// headerタグCSS開始
+header {
+    width: 100%;
+    height: 900px;
+    background-color: #EEE;
+}
+
+#img-wrap {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    border-bottom-left-radius: 300% 20%;
+    border-bottom-right-radius: 300% 20%;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 800px;
+        object-fit: cover;
+        overflow: hidden;
+    }
+}
+
+#header-icon {
+    position: absolute;
+    top: 67px;
+    left: 100px;
+    width: 266px;
+    height: 72px;
+
+    &:hover {
+      opacity: 0.7;
+      transition: all 0.5s;
+      cursor: pointer;
+    }
+}
+
+#nav {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    background-color: none;
+
+    ul {
+        display: flex;
+        position: absolute;
+        top: 67px;
+        right: 80px;
+
+        li {
+            list-style-type: none;
+            padding: 30px;
+
+            &:hover {
+                border-bottom: solid;
+                transition: all 1s;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+#chevron-down {
+    position: relative;
+    top: -60px;
+    right: 740px;
+    svg {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+ul {
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+// headerタグCSS終了
+
+// id=poemCSS開始
+#poem {
+    height: 850px;
+    background-color: #EEE;
+}
+
+#poem-container {
+    height: 850px;
+    width: 30%;
+    margin: 0 auto;
+    color: black;
+    text-align: left;
+    padding-left: 30px;
+
+    h1 {
+        padding-left: 70px;
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }
+}
+
+.txt {
+    padding-top: 30px;
+
+    img {
+        width: 55%;
+        height: 48%;
+        margin-left: 60px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+// id=poemCSS終了
+
+// id=productCSS開始
+#product {
+    height: 1250px;
+    display: flex;
+    justify-content: center;
+}
+
+#product-container {
+    height: 1250px;
+    width: 60%;
+
+    h1 {
+        padding: 100px 0px 5px 0px;
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px 0px 30px 0px;
+    }
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.move-to-category-page {
+    height: 47px;
+    width: 160px;
+    background-color: transparent;
+    font-size: 13px;
+    border: 1px solid #13191b;
+    text-align: center;
+
+    &:hover {
+        background-color: black;
+        color: white;
+        transition: all 0.3s;
+    }
+}
+
+.right-arrow {
+    position: relative;
+    left: 40px;
+    top: -1.5px;
+}
+
+.more-btn {
+    padding-top: 100px;
+    padding-right: 20px;
+}
+
+.heading-border {
+    padding-bottom: 60px;
+
+    img {
+        height: 10px;
+        position: relative;
+        top: -10px;
+    }
+}
+
+#posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.post {
+    width: 250px;
+
+    img {
+        width: 100%;
+        box-shadow: 10px 5px 5px silver;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    p {
+        letter-spacing: 2px;
+        position: relative;
+        left: 5px;
+    }
+
+    &:hover {
+        opacity: 0.7;
+        transition: all 0.3s;
+    }
+}
+// id=productCSS終了
+
+// id=newsCSS開始
+#news {
+    height: 1450px;
+    display: flex;
+    justify-content: center;
+    background-color: #EEE;
+}
+
+#news-container {
+    height: 1450px;
+    width: 60%;
+
+    h1 {
+        padding: 100px 0px 5px 0px;
+        font-size: 30px;
+    }
+}
+
+article {
+    display: flex;
+    padding-bottom: 40px;
+
+    &:hover {
+        opacity: 0.7;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+}
+
+.article-link {
+    text-decoration: none;
+}
+
+.right-content {
+    padding-left: 20px;
+    height: 100%;
+
+    h2 {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 30px;
+        color: black;
+    }
+
+    p {
+       color: #666;
+       font-size: 16px;
+    }
+}
+
+.left-content {
+    height: 100%;
+
+    img {
+        height: 100%;
+    }
+}
+
+// id=newsCSS終了
+
+//id=up-arrow開始
+#up-arrow {
+    display: flex;
+    justify-content: center;
+    background-color: #EEE;
+
+    img {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        top: 24px;
+
+        &:hover {
+            position: relative;
+            top: 20px;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+    }
+}
+//id=up-arrow終了
+
+//id=share開始
+#share {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+}
+
+#facebook {
+    color: #4871a9;
+    border: 1px solid #4871a9;
+    background-color: white;
+    padding: 15px 25px 15px 25px;
+    letter-spacing: 0.05em;
+    font-size: 13px;
+
+    &:hover {
+        color: white;
+        background-color: #4871a9;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+}
+
+#twitter {
+    color: #70bdd3;
+    background-color: white;
+    border: 1px solid #70bdd3;
+    padding: 15px 25px 15px 25px;
+    letter-spacing: 0.05em;
+    font-size: 13px;
+
+    &:hover {
+        color: white;
+        background-color: #70bdd3;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+}
+
+#hatena {
+    color: #2f9bcd;
+    background-color: white;
+    border: 1px solid #2f9bcd;
+    padding: 15px 25px 15px 25px;
+    letter-spacing: 0.05em;
+    font-size: 13px;
+
+    &:hover {
+        color: white;
+        background-color: #2f9bcd;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+}
+//id=share終了
+
+// id=footer-nav開始
+#footer-nav {
+    background-color: #999;
+    height: 90px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.list-item {
+    list-style: none;
+    color: white;
+    padding: 30px 30px 0px 30px;
+
+    &:hover {
+        color: #EEE;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+}
+
+.list-items {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    padding-right: 13px;
+}
+// id=footer-nav終了
+
+// footer開始
+footer {
+    background-color: #666;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+#footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+#footer-icon {
+    img {
+        width: 89px;
+        height: 90px;
+        position: relative;
+        top: 30px;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.8;
+            transition: all 0.3s;
+        }
+    }
+}
+
+#copyright {
+    color: #EEE;
+    font-size: 11px;
+
+    p {
+        position: relative;
+        top: 65px;
+    }
+}
+// footer終了
+
+// show.blade.php開始
+#show-wrapper {
+    background-color: #EEE;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+#show-header {
+    height: 200px;
+    background-color: #666;
+}
+
+#show-container {
+    display: flex;
+    height: 1000px;
+    width: 70%;
+
+    h1 {
+        font-size: 28px;
+        padding-top: 30px;
+    }
+}
+
+#content-right {
+    width: 30%;
+}
+
+.right-item {
+    height: 180px;
+    background-color: white;
+    margin-top: 50px;
+    box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+
+    h4 {
+        padding: 30px;
+    }
+}
+
+.item-top {
+    margin-top: 80px;
+}
+
+#content-left {
+    padding-top: 20px;
+    width: 70%;
+    display: block;
+    justify-content: space-between;
+}
+
+#youtube {
+    width: 600px;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+#left-body {
+    width: 92%;
+    height: 170px;
+    padding-top: 30px;
+}
+
+#related-article {
+    background-color: white;
+    width: 92%;
+    height: 180px;
+    margin-top: 103px;
+    box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+
+    h4 {
+        padding: 30px;
+    }
+}
+
+#show-breadcrumbs {
+    display: flex;
+    justify-content: center;
+    box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumb {
+    width: 80%;
+}
+
+.btn-dark {
+  margin-right: 10px;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+// show.blade.php終了
+
+// create.blade.php開始
+#create-main {
+    background-color: #EEE;
+    display: flex;
+    justify-content: center;
+    height: 980px;
+}
+
+#create-container {
+    width: 80%;
+    height: 980px;
+
+    h1 {
+        padding-top: 80px;
+    }
+
+    form {
+        height: 800px;
+        padding-top: 10px;
+    }
+}
+
+.form-button {
+    padding-top: 60px;
+
+    button {
+        background-color: #666;
+        color: white;
+        opacity: 0.9;
+
+        &:hover {
+            background-color: #666;
+            color: white;
+            opacity: 0.7;
+            transition: all 0.3s;
+        }
+    }
+}
+
+.mb-3 {
+    padding-top: 20px;
+
+    textarea {
+        height: 250px;
+    }
+}
+
+#create-breadcrumbs {
+   display: flex;
+   justify-content: center;
+   box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumb {
+    width: 80%;
+
+    li {
+        padding-top: 20px;
+        padding-bottom: 5px;
+        color: #666;
+
+        a {
+            text-decoration: none;
+            color: #666;
+
+            &:hover {
+                opacity: 0.7;
+                transition: all 0.3s;
+            }
+        }
+    }
+}
+// create.blade.php終了
+
+// エラーメッセージの色修正
